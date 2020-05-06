@@ -37,6 +37,25 @@
 				"7",
 				"--overwrite-data"
 			]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Create Tournament",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}\\src\\cli.ts",
+			"outFiles": [
+				"${workspaceFolder}/dist/**/*.js"
+			],
+			"args": [
+				"--faction-count",
+				"7",
+				"--create-tournament",
+				"--game-count",
+				"6"
+			]
 		}
 	]
 }

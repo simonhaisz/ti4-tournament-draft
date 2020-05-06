@@ -5,9 +5,13 @@ export type Draft = Faction[];
 
 export function generateRandomDraft(factionsPerGame: number): Draft {
 	const draft: Draft = [];
-	for (let i = 0; i < factionsPerGame; i++) {
-		const index = randomBytes(1).readInt8(0) % FACTIONS.length;
-		draft.push(FACTIONS[index]);
+	while (draft.length < factionsPerGame) {
+		const n = Math.abs(randomBytes(4).readInt32BE(0));
+		const index = n % FACTIONS.length;
+		const faction = FACTIONS[index];
+		if (!draft.includes(faction)) {
+			draft.push(faction);
+		}
 	}
 	return draft;
 }
