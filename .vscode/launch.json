@@ -1,0 +1,42 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "3 Factions",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}\\src\\cli.ts",
+			"outFiles": [
+				"${workspaceFolder}/dist/**/*.js"
+			],
+			"args": [
+				"--faction-count",
+				"3",
+				"--overwrite-data"
+			]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "7 Factions",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}\\src\\cli.ts",
+			"outFiles": [
+				"${workspaceFolder}/dist/**/*.js"
+			],
+			"args": [
+				"--faction-count",
+				"7",
+				"--overwrite-data"
+			]
+		}
+	]
+}

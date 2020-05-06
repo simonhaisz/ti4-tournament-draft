@@ -1,0 +1,29 @@
+{
+  "name": "ti4-tournament-draft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/cli.js",
+  "scripts": {
+    "test": "node dist/cli.js --faction-count 3 --overwrite-data",
+    "patience": "node dist/cli.js --faction-count 7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonhaisz/ti4-tournament-draft.git"
+  },
+  "author": "simonhaisz@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simonhaisz/ti4-tournament-draft/issues"
+  },
+  "homepage": "https://github.com/simonhaisz/ti4-tournament-draft#readme",
+  "dependencies": {
+    "@types/node": "12",
+    "commander": "^5.1.0",
+    "fs-extra": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^8.1.0",
+    "typescript": "^3.8.3"
+  }
+}
