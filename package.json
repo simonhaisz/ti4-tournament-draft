@@ -4,9 +4,10 @@
   "description": "",
   "main": "dist/cli.js",
   "scripts": {
-    "test": "node dist/cli.js --faction-count 3 --overwrite-data",
-    "patience": "node dist/cli.js --faction-count 7",
-    "create-tourney": "node dist/cli.js --faction-count 7 --create-tournament --game-count 6"
+    "gen": "node dist/cli.js",
+    "test": "yarn gen --faction-count 3 --overwrite-data",
+    "patience": "yarn gen --faction-count 7",
+    "create-tourney": "yarn gen --faction-count 7 --create-tournament --game-count 6"
   },
   "repository": {
     "type": "git",
